@@ -10,6 +10,7 @@
         Red = 2,
         RedHt = 3,
         Yellow = 4,
+        FastBlack = 5
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

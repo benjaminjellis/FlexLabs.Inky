@@ -25,6 +25,22 @@ namespace FlexLabs.Inky
         private static readonly Dictionary<InkyDisplayColour, byte[]> Luts =
             new Dictionary<InkyDisplayColour, byte[]>
             {
+                [InkyDisplayColour.FastBlack] = new byte[]
+                {
+                   0b01001000, 0b10100000, 0b00010000, 0b00010000, 0b00010011, 0b00000000, 0b00000000,
+                   0b01001000, 0b10100000, 0b10000000, 0b00000000, 0b00000011, 0b00000000, 0b00000000,
+                   0b00000000, 0b00000000, 0b00000000, 0b00000000, 0b00000000, 0b00000000, 0b00000000,
+                   0b01001000, 0b10100101, 0b00000000, 0b10111011, 0b00000000, 0b00000000, 0b00000000,
+                   0b00000000, 0b00000000, 0b00000000, 0b00000000, 0b00000000, 0b00000000, 0b00000000,
+                   // The following timings have been reduced to avoid the fade to black
+                   0x00, 0x00, 0x00, 0x00, 0x00,
+                   0x10, 0x04, 0x04, 0x04, 0x04,
+                   0x04, 0x08, 0x08, 0x10, 0x10,
+                   0x00, 0x00, 0x00, 0x00, 0x00,
+                   0x00, 0x00, 0x00, 0x00, 0x00,
+                   0x00, 0x00, 0x00, 0x00, 0x00,
+                   0x00, 0x00, 0x00, 0x00, 0x00,
+                },
                 [InkyDisplayColour.Black] = new byte[]
                 {
                     0b01001000, 0b10100000, 0b00010000, 0b00010000, 0b00010011, 0b00000000, 0b00000000,
